@@ -158,7 +158,7 @@ exports.forgotPassword = async (req, res) => {
                 to: email,
                 subject: "Password Reset Link",
                 text: `Click on the following link to reset the password. This link will only work once and will be valid for only 30 minutes.\
-            http://localhost:3000/resetPassword/${jwtToken}`
+                https://job-project-render.onrender.com/resetPassword/${jwtToken}`
             }
 
             transporter.sendMail(mailOptions, async (error, info) => {
